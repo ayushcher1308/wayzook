@@ -35,10 +35,17 @@ export class LandingPageComponent implements OnInit {
       var el = document.getElementById("pageLoad");
       el.classList.add('off');
       document.getElementById("sidebar-wrapper").style.display = 'block';
+      document.getElementById("page-content-wrapper").style.display = 'block';
   	}, 500)
   }, 500)
 }, 1500);
 console.log("anii");
   }
 
+  formLoad()
+  {
+    
+  }
+
 }
+
