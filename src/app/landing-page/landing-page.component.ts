@@ -34,6 +34,7 @@ export class LandingPageComponent implements OnInit {
     setTimeout(function() {
       var el = document.getElementById("pageLoad");
       el.classList.add('off');
+      document.getElementById("sidebar-wrapper").style.display = 'block';
   	}, 500)
   }, 500)
 }, 1500);
