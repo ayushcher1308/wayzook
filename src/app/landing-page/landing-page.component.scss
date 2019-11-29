@@ -755,8 +755,8 @@ h1 {
 // Base styles
 .card {
   float: left;
-  padding: 0 1.7rem;
-  width: 50%;
+  margin-right: 2%;
+    width: 48%;
   .menu-content {
     @include cf;
     margin: 0;
@@ -988,6 +988,13 @@ h1 {
         opacity: 1;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 98%;
+    margin-bottom: 5px;
   }
 }
 
