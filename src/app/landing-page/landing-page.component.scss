@@ -151,7 +151,6 @@ h1 {
   overflow: hidden; 
   font-family: 'Open Sans';
 }
-
 body, html.on {
   overflow: auto; 
 }*/
@@ -927,9 +926,10 @@ h1 {
 // Second example styles
 .example-2 {
   .wrapper {
-    background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center / cover no-repeat;
+    // background: url(../../assets/2.jpg) center / cover no-repeat;
     &:hover {
       .menu-content {
+        transform: scale(1.2);
         span {
           transform: translate(-50%, -10px);
           opacity: 1;
@@ -1023,6 +1023,41 @@ h1 {
   }
 }
 
+.carousel-caption {
+  top: 100px;
+  bottom: auto;
+  text-align: left !important;
+}
 
+.readmore:hover
+{
+  color:black;
+}
 
+.box
+{
+  height: 400px;
+  width: 300px;
+  background-color: transparent;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+  float: right;
+  margin-top: -200px;
+  padding: 10px;
+}
 
+.fadeInLeft
+{
+  font-weight: 600;
+    color: white;
+    font-size: 75px;
+}
+
+.intro
+{
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
