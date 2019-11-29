@@ -4,13 +4,16 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.css']
+  styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent implements OnInit {
 
   constructor(private router: Router) { }
 
+  people;
+
   ngOnInit() {
+    this.people = 1;
     this.loader();
     // setTimeout(()=>this.router.navigate(['/booking']),2000);
     // this.router.navigate(['/booking']);
@@ -42,9 +45,20 @@ export class LandingPageComponent implements OnInit {
 console.log("anii");
   }
 
-  formLoad()
+  decrement()
   {
-    
+    if(this.people > 1)
+    {
+      this.people = this.people - 1;
+    }
+  }
+
+  increment()
+  {
+    if(this.people < 8)
+    {
+      this.people = this.people + 1;
+    }
   }
 
 }
